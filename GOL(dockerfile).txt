@@ -1,0 +1,5 @@
+FROM tomcat:8
+LABEL AUTHOR="SAI"
+LABEL ORG="ST"
+ADD https://qt-s3-new-testing.s3-us-west-2.amazonaws.com/gameoflife.war to tomcat webapps folder /usr/local/tomcat/logs/gameoflife.war
+EXPOSE 9000
